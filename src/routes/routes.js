@@ -1,6 +1,7 @@
 import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
 // GeneralViews
 import NotFound from '../components/GeneralViews/NotFoundPage.vue'
+import Login from '../components/GeneralViews/Login.vue'
 
 // Admin pages
 import Overview from 'src/components/Dashboard/Views/Overview.vue'
@@ -58,6 +59,11 @@ const routes = [
         component: TableList
       }
     ]
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login
   },
   { path: '*', component: NotFound }
 ]
