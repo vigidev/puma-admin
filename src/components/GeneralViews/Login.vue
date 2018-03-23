@@ -45,7 +45,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 #login{
 	background-image: url("/static/img/fotopu.jpg");
 	background-size: cover;
