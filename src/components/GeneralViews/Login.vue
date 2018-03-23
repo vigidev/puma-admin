@@ -1,21 +1,11 @@
 <template>
-  <div class="wrapper">
-    <side-bar type="sidebar" :sidebar-links="$sidebar.sidebarLinks">
-
-    </side-bar>
-    <notifications>
-
-    </notifications>
-
-    <div class="main-panel">
-      <top-navbar></top-navbar>
-
-	  <div class="content">
+  <div id="login">
+	  <div class="wrapper">
 	    <div class="container">
-	        <transition name="fade" mode="out-in">
+				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 ">
 			  <div class="card">
 			    <div class="header">
-			      <h4 class="title">{{user.title}}</h4>
+			      <h3 class="title">{{user.title}}</h3>
 			    </div>
 			    <div class="content">
 			      <form>
@@ -37,7 +27,6 @@
 			            </fg-input>
 			          </div>
 			        </div>
-			        <a href="#" class="text-danger">{{user.reset}}</a>
 			        <div class="text-center">
 			          <button type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="Login">
 			            {{user.title}}
@@ -45,19 +34,39 @@
 			        </div>
 			        <div class="clearfix"></div>
 			      </form>
+			    <div class="forgot">
+						<a href="#" class="btn btn-simple btn-danger">{{user.reset}}</a>
+					</div>
 			    </div>
 			  </div>
-	        </transition>
+				</div>
 	    </div>
 	  </div>
-
-      <content-footer></content-footer>
-    </div>
   </div>
 </template>
 
 <style lang="scss">
-
+#login{
+	background-image: url("/static/img/fotopu.jpg");
+	background-size: cover;
+}
+.wrapper{
+	background-color: rgba(0,0,0,0.5);
+}
+.card {
+	margin-top: 20vh;
+	.header {
+		text-align: center;
+	}
+	.forgot {
+		text-align: center;
+		.btn {
+		margin-top: 30px;
+		border: 0;
+		padding: 7px 18px;
+		}
+	}
+}
 </style>
 
 <script>
