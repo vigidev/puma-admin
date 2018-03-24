@@ -1,22 +1,33 @@
-import DashboardLayout from '../components/Dashboard/Layout/DashboardLayout.vue'
+// Lazy Loading Component https://router.vuejs.org/en/advanced/lazy-loading.html
+const DashboardLayout = () => System.import(/* webpackChunkName: "dashboard-layout" */
+  '../components/Dashboard/Layout/DashboardLayout.vue')
 // GeneralViews
-import NotFound from '../components/GeneralViews/NotFoundPage.vue'
-import Login from '../components/GeneralViews/Login.vue'
-
+const NotFound = () => System.import(/* webpackChunkName: "not-found" */
+  '../components/GeneralViews/NotFoundPage.vue')
+const Login = () => System.import(/* webpackChunkName: "login" */
+  '../components/GeneralViews/Login.vue')
 // Admin pages
-import Overview from 'src/components/Dashboard/Views/Overview.vue'
-import UserProfile from 'src/components/Dashboard/Views/UserProfile.vue'
-import Notifications from 'src/components/Dashboard/Views/Notifications.vue'
-import Icons from 'src/components/Dashboard/Views/Icons.vue'
-import Maps from 'src/components/Dashboard/Views/Maps.vue'
-import Typography from 'src/components/Dashboard/Views/Typography.vue'
-import TableList from 'src/components/Dashboard/Views/TableList.vue'
-import Puma from 'src/components/Dashboard/Views/Puma.vue'
+const Overview = () => System.import(/* webpackChunkName: "overview" */
+  'src/components/Dashboard/Views/Overview.vue')
+const UserProfile = () => System.import(/* webpackChunkName: "user-profile" */
+  'src/components/Dashboard/Views/UserProfile.vue')
+const Notifications = () => System.import(/* webpackChunkName: "notifications" */
+  'src/components/Dashboard/Views/Notifications.vue')
+const Icons = () => System.import(/* webpackChunkName: "icons" */
+  'src/components/Dashboard/Views/Icons.vue')
+const Maps = () => System.import(/* webpackChunkName: "maps" */
+  'src/components/Dashboard/Views/Maps.vue')
+const Typography = () => System.import(/* webpackChunkName: "typography" */
+  'src/components/Dashboard/Views/Typography.vue')
+const TableList = () => System.import(/* webpackChunkName: "table-list" */
+  'src/components/Dashboard/Views/TableList.vue')
+const Puma = () => System.import(/* webpackChunkName: "puma" */
+  'src/components/Dashboard/Views/Puma.vue')
 
 const routes = [
   {
     path: '/',
-    component: DashboardLayout,
+    component: Login,
     redirect: '/login'
   },
   {
