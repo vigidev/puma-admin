@@ -14,7 +14,7 @@
         <update-member>
 
         </update-member>
-        
+
         <delete-member>
 
         </delete-member>
@@ -42,6 +42,78 @@ import RegisterMember from 'components/Dashboard/Views/Puma/RegisterMember.vue'
 const tableColumns = ['id', 'Fullname', 'Position', 'Email']
 
 var adminMembers = [{
+  id: '001201500028',
+  fullname: 'Muhammad Iqbal Lukman',
+  position: 'Web Dev',
+  email: 'muhiqballukman@gmail.com'
+},
+{
+  id: '001201500072',
+  fullname: 'Rakha Viantoni Prastya',
+  position: 'Web Dev',
+  email: 'rakhaviantoni'
+},
+{
+  id: '001201500069',
+  fullname: 'Teuku Hilman Revanda',
+  position: 'Web Dev',
+  email: 'teukuatjeh'
+},
+{
+  id: '001201500028',
+  fullname: 'Muhammad Iqbal Lukman',
+  position: 'Web Dev',
+  email: 'muhiqballukman@gmail.com'
+},
+{
+  id: '001201500072',
+  fullname: 'Rakha Viantoni Prastya',
+  position: 'Web Dev',
+  email: 'rakhaviantoni'
+},
+{
+  id: '001201500069',
+  fullname: 'Teuku Hilman Revanda',
+  position: 'Web Dev',
+  email: 'teukuatjeh'
+},
+{
+  id: '001201500028',
+  fullname: 'Muhammad Iqbal Lukman',
+  position: 'Web Dev',
+  email: 'muhiqballukman@gmail.com'
+},
+{
+  id: '001201500072',
+  fullname: 'Rakha Viantoni Prastya',
+  position: 'Web Dev',
+  email: 'rakhaviantoni'
+},
+{
+  id: '001201500069',
+  fullname: 'Teuku Hilman Revanda',
+  position: 'Web Dev',
+  email: 'teukuatjeh'
+},
+{
+  id: '001201500028',
+  fullname: 'Muhammad Iqbal Lukman',
+  position: 'Web Dev',
+  email: 'muhiqballukman@gmail.com'
+},
+{
+  id: '001201500072',
+  fullname: 'Rakha Viantoni Prastya',
+  position: 'Web Dev',
+  email: 'rakhaviantoni'
+},
+{
+  id: '001201500069',
+  fullname: 'Teuku Hilman Revanda',
+  position: 'Web Dev',
+  email: 'teukuatjeh'
+},
+{
   id: '001201500028',
   fullname: 'Muhammad Iqbal Lukman',
   position: 'Web Dev',

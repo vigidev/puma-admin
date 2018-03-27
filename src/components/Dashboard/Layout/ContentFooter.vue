@@ -9,8 +9,11 @@
         </ul>
       </nav>
       <div class="copyright pull-right">
-        &copy; Coded with
+        &copy; 2018 WebDev Computing. Coded with
         <i class="fa fa-heart heart"></i> by
+        <a href="">Muhammad Iqbal</a>, 
+        <a href="">Rakha Viantoni</a>, 
+        <a href="">Teuku Hilman </a>, and
         <a href="https://github.com/cristijora" target="_blank">Cristi Jora</a>.
         Designed by <a href="https://www.creative-tim.com/?ref=pdf-vuejs" target="_blank">Creative Tim</a>.
       </div>

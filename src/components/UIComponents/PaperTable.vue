@@ -56,5 +56,14 @@
 
 </script>
 <style>
-
+.header{
+  margin-bottom: 2em;
+}
+.table-responsive{
+  max-height: 50vh;
+  overflow: scroll;
+}
+thead{
+  text-transform: uppercase;
+}
 </style>
