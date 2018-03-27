@@ -10,44 +10,24 @@
     </div>
 
     <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="header">
-            <h4 class="title">Edit Profile</h4>
-          </div>
-          <div class="content">
-            <form action="">
-              <div class="row">
-                <div class="col-md-12">
-                  <fg-input type="text"
-                      label="Student ID"
-                      placeholder="Paper dashboard"
-                      v-model="findID"
-                      >
-                  </fg-input>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <p><b>Full Name: </b>-</p>
-                  <p><b>Nickname: </b>-</p>
-                  <p><b>Position: </b>-</p>
-                  <p><b>Email: </b>-</p>
-                  <p><b>Phone Number: </b>-</p>
-                  <p><b>Password: </b>-</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12 text-center">
-                  <button type="submit" class="btn btn-info btn-fill btn-wd" @click.prevent="updateProfile">
-                    Update Profile
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+      <div class="col-md-4">
+        <update-member>
+
+        </update-member>
+        
+        <delete-member>
+
+        </delete-member>
       </div>
+      <div class="col-md-8">
+        <register-member>
+
+        </register-member>
+      </div>
+    </div>
+
+    <div class="row">
+
     </div>
     
   </div>
@@ -55,7 +35,12 @@
 
 <script>
 import PaperTable from 'components/UIComponents/PaperTable.vue'
+import UpdateMember from 'components/Dashboard/Views/Puma/UpdateMember.vue'
+import DeleteMember from 'components/Dashboard/Views/Puma/DeleteMember.vue'
+import RegisterMember from 'components/Dashboard/Views/Puma/RegisterMember.vue'
+
 const tableColumns = ['id', 'Fullname', 'Position', 'Email']
+
 var adminMembers = [{
   id: '001201500028',
   fullname: 'Muhammad Iqbal Lukman',
@@ -77,7 +62,10 @@ var adminMembers = [{
 ]
 export default {
   components: {
-    PaperTable
+    PaperTable,
+    UpdateMember,
+    DeleteMember,
+    RegisterMember
   },
   data () {
     return {
@@ -86,9 +74,7 @@ export default {
         subTitle: 'Member that have access to this table',
         columns: [...tableColumns],
         data: [...adminMembers]
-      },
-      findId: '',
-      findName: ''
+      }
     }
   }
 }
